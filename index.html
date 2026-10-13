@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vaibhav Adhikari - IT Team Lead & Enterprise Infrastructure Architect. Protecting perimeters with Sophos Firewalls, powering high-availability networks with Cisco/Aruba, and leading hybrid cloud security with Azure." />
+  <meta name="keywords" content="Vaibhav Adhikari, IT Team Lead, Infrastructure Architect, Network Defender, Sophos XG, Cisco Switching, Azure Cloud Security, Active Directory, Disaster Recovery, Murbad, Maharashtra" />
+  <meta name="author" content="Vaibhav Adhikari" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vaibhav Adhikari | Enterprise Infrastructure Architect & IT Team Lead" />
+  <meta property="og:description" content="I architect, defend, and keep mission-critical enterprise systems alive 24/7/365. Specializing in Perimeter Security, High-Availability Switching, and Hybrid Cloud." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.linkedin.com/in/vaibhav-adhikari" />
+
+  <title>Vaibhav Adhikari | Enterprise Infrastructure Architect & IT Team Lead</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Dynamic Cyber/Network Node Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>VA<span class="logo-dot">.</span>NET<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#identity" class="nav-link"><i class="fa-solid fa-fingerprint"></i> Who I Am</a>
+        <a href="#superpowers" class="nav-link"><i class="fa-solid fa-bolt"></i> Capabilities</a>
+        <a href="#arsenal" class="nav-link"><i class="fa-solid fa-microchip"></i> My Arsenal</a>
+        <a href="#scenarios" class="nav-link"><i class="fa-solid fa-shield-virus"></i> Battle Scenarios</a>
+        <a href="#journey" class="nav-link"><i class="fa-solid fa-compass"></i> My Journey</a>
+        <a href="#cloud-frontier" class="nav-link"><i class="fa-solid fa-cloud"></i> Cloud Frontier</a>
+        <a href="#contact" class="nav-link contact-btn"><i class="fa-solid fa-satellite-dish"></i> Connect</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle Theme">
+          <i class="fa-solid fa-sun light-icon"></i>
+          <i class="fa-solid fa-moon dark-icon"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="icon-btn mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: THE IDENTITY -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <!-- Real-Time Status Pill -->
+          <div class="badge-wrapper">
+            <span class="status-indicator"></span>
+            <span class="badge">NOC Status: 100% Operational • 5+ Years Protecting Enterprise Uptime</span>
+          </div>
+
+          <h1 class="hero-title">
+            I'm <span class="gradient-text">Vaibhav Adhikari</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            <span id="typed-text" class="typed-text"></span><span class="cursor">&nbsp;</span>
+          </h2>
+
+          <p class="hero-desc">
+            I am the guardian behind the scenes. When manufacturing plants operate without interruption, 
+            when cyber threats bounce harmlessly off the perimeter, and when dispersed corporate campuses communicate at lightning speed — 
+            <strong>that's what I build and defend.</strong>
+          </p>
+
+          <div class="hero-cta">
+            <a href="#superpowers" class="btn btn-primary">
+              <i class="fa-solid fa-shield-halved"></i> What I Deliver
+            </a>
+            <a href="#scenarios" class="btn btn-secondary">
+              <i class="fa-solid fa-terminal"></i> Interactive NOC Console
+            </a>
+            <a href="https://www.linkedin.com/in/vaibhav-adhikari" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+
+          <!-- Live Operational Vitals Bar -->
+          <div class="vitals-strip">
+            <div class="vital-item">
+              <div class="vital-num">99.9%</div>
+              <div class="vital-label"><i class="fa-solid fa-circle-check text-emerald"></i> Production Uptime</div>
+            </div>
+            <div class="vital-divider"></div>
+            <div class="vital-item">
+              <div class="vital-num">&lt; 30 min</div>
+              <div class="vital-label"><i class="fa-solid fa-clock-rotate-left text-cyan"></i> Disaster RTO / RPO</div>
+            </div>
+            <div class="vital-divider"></div>
+            <div class="vital-item">
+              <div class="vital-num">500+</div>
+              <div class="vital-label"><i class="fa-solid fa-shield-virus text-rose"></i> Endpoints Hardened</div>
+            </div>
+            <div class="vital-divider"></div>
+            <div class="vital-item">
+              <div class="vital-num">0 Sec</div>
+              <div class="vital-label"><i class="fa-solid fa-lock text-amber"></i> Perimeter Compromises</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Command Center -->
+        <div class="hero-visual">
+          <div class="command-card glass-card">
+            <div class="command-card-header">
+              <div class="live-pulse-wrapper">
+                <span class="pulse-ring"></span>
+                <span class="pulse-core"></span>
+              </div>
+              <span class="command-title">OPERATIONAL COMMAND CENTER</span>
+              <span class="command-tag">ACTIVE</span>
+            </div>
+
+            <div class="avatar-hero-box">
+              <div class="avatar-circle">
+                <span class="avatar-initials">VA</span>
+                <div class="avatar-radar"></div>
+              </div>
+              <h3 class="commander-name">Vaibhav Adhikari</h3>
+              <p class="commander-tagline">IT Team Lead • Systems & Network Architect</p>
+              <div class="commander-loc">
+                <i class="fa-solid fa-location-dot"></i> Technocraft Industries • Murbad, Maharashtra
+              </div>
+            </div>
+
+            <!-- Real-time Subsystem Status Cards -->
+            <div class="subsystems-grid">
+              <div class="subsystem-pill online">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <strong>Sophos XG/XGS</strong>
+                  <span>Perimeter Shielded</span>
+                </div>
+              </div>
+
+              <div class="subsystem-pill online">
+                <i class="fa-solid fa-network-wired"></i>
+                <div>
+                  <strong>Cisco & Aruba L3</strong>
+                  <span>Zero Packet Drop</span>
+                </div>
+              </div>
+
+              <div class="subsystem-pill online">
+                <i class="fa-brands fa-windows"></i>
+                <div>
+                  <strong>Active Directory</strong>
+                  <span>GPO & WSUS Synced</span>
+                </div>
+              </div>
+
+              <div class="subsystem-pill online">
+                <i class="fa-brands fa-microsoft"></i>
+                <div>
+                  <strong>Azure Cloud Security</strong>
+                  <span>Hybrid Entra ID Live</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="command-card-actions">
+              <a href="mailto:vaibhav.d.adhikari@gmail.com" class="btn btn-sm btn-primary btn-block">
+                <i class="fa-solid fa-envelope"></i> Reach Out Directly
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDENTITY SECTION: WHO I AM -->
+    <section id="identity" class="section identity-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-fingerprint"></i> My DNA</span>
+          <h2 class="section-title">Who I Am & What I Stand For</h2>
+          <p class="section-subtitle">Not a spectator of technology — I build, protect, troubleshoot, and lead.</p>
+        </div>
+
+        <div class="identity-grid">
+          <div class="identity-narrative glass-card">
+            <h3 class="narrative-heading">
+              <i class="fa-solid fa-shield-heart text-accent"></i> The Engineer Who Doesn't Sleep on Downtime
+            </h3>
+            <p>
+              In enterprise manufacturing and corporate operations, every second a network stalls or a server fails translates to halted assembly lines, delayed dispatches, and thousands in lost revenue.
+            </p>
+            <p>
+              <strong>That is where I come in.</strong> For over 5 years, I have stood at the frontline of IT operations at <strong>Technocraft Industries India Ltd</strong>. I started on the ground floor terminating CAT-6 patch panels and troubleshooting raw hardware — and grew into the <strong>IT Team Lead</strong> who commands the network architecture, directs technical staff, configures enterprise firewalls, and orchestrates cloud migrations.
+            </p>
+            <p>
+              I believe in <strong>resilience by design</strong>: an infrastructure that doesn't just work when everything is normal, but one that self-heals, isolates breaches instantly, and recovers from bare metal before anyone notices a disruption.
+            </p>
+
+            <div class="creed-box">
+              <i class="fa-solid fa-quote-left creed-quote"></i>
+              <p class="creed-text">
+                "A true Systems Administrator isn't judged by how fast they put out fires — but by the architectures they build so fires never start in the first place."
+              </p>
+            </div>
+          </div>
+
+          <div class="identity-pillars">
+            <div class="identity-pillar-card">
+              <div class="pillar-number">01</div>
+              <div class="pillar-content">
+                <h4>Impenetrable Perimeter Security</h4>
+                <p>I view perimeter firewalls like castle walls. Granular NAT rules, strict VLAN segmentation, SSL/IPsec tunnels, and active endpoint DLP ensure bad actors are stopped dead in their tracks.</p>
+              </div>
+            </div>
+
+            <div class="identity-pillar-card">
+              <div class="pillar-number">02</div>
+              <div class="pillar-content">
+                <h4>Bulletproof High Availability</h4>
+                <p>Redundant links, spanning-tree topologies, multi-gigabit fiber uplinks, and wireless RF bridges that keep geographically separated industrial plants connected without skipping a heartbeat.</p>
+              </div>
+            </div>
+
+            <div class="identity-pillar-card">
+              <div class="pillar-number">03</div>
+              <div class="pillar-content">
+                <h4>Disciplined Technical Leadership</h4>
+                <p>I don't just manage hardware; I mentor engineers. I translate business priorities into strict SLAs, guide technicians through crisis calls, and author standard operating procedures that scale.</p>
+              </div>
+            </div>
+
+            <div class="identity-pillar-card">
+              <div class="pillar-number">04</div>
+              <div class="pillar-content">
+                <h4>Relentless Continuous Evolution</h4>
+                <p>Never stagnant. Expanding on-premises infrastructure dominance into the cloud frontier with Microsoft Azure (AZ-104, SC-500, AZ-700) to architect secure hybrid ecosystems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPERPOWERS / WHAT I DO -->
+    <section id="superpowers" class="section superpowers-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-bolt"></i> Core Superpowers</span>
+          <h2 class="section-title">What I Actually Deliver</h2>
+          <p class="section-subtitle">Real architectural capabilities battle-tested on enterprise production lines.</p>
+        </div>
+
+        <div class="superpowers-grid">
+          <!-- Superpower 1 -->
+          <div class="power-card glass-card">
+            <div class="power-icon-wrapper security-gradient">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h3 class="power-title">Zero-Trust Perimeter & Endpoint Shielding</h3>
+            <p class="power-desc">
+              I configure and manage enterprise <strong>Sophos XG/XGS Firewalls</strong> down to the packet level. I engineer NAT translation rules, isolate untrusted subnets, configure IP access policies, and establish rock-solid IPsec site-to-site & SSL VPN tunnels. Backed by <strong>Sophos Endpoint Central</strong>, every workstation is kept compliant with zero DLP leaks.
+            </p>
+            <div class="power-chips">
+              <span>Sophos XG/XGS</span><span>NAT Rules</span><span>IPsec & SSL VPN</span><span>DLP Compliance</span><span>Wireshark</span>
+            </div>
+          </div>
+
+          <!-- Superpower 2 -->
+          <div class="power-card glass-card">
+            <div class="power-icon-wrapper network-gradient">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="power-title">Enterprise Routing, Switching & Long-Range RF</h3>
+            <p class="power-desc">
+              I design campus networks using <strong>Cisco Layer 3 and Aruba Layer 2 switches</strong> that eliminate broadcast storms and route packets at wire speed. When facilities are separated by distance, I deploy <strong>Ubiquiti Point-to-Point RF bridges</strong> and cloud-managed <strong>Cambium cnMaestro APs</strong>, delivering seamless high-throughput connectivity across plants.
+            </p>
+            <div class="power-chips">
+              <span>Cisco L3</span><span>Aruba Switches</span><span>VLAN Segmentation</span><span>Ubiquiti RF Bridges</span><span>Cambium cnMaestro</span>
+            </div>
+          </div>
+
+          <!-- Superpower 3 -->
+          <div class="power-card glass-card">
+            <div class="power-icon-wrapper windows-gradient">
+              <i class="fa-brands fa-windows"></i>
+            </div>
+            <h3 class="power-title">Centralized Identity & Server Domain Governance</h3>
+            <p class="power-desc">
+              From Windows Server 2012 R2 through <strong>Windows Server 2025</strong>, I rule the domain. I architect Active Directory trees, craft restrictive Group Policies (GPO) that harden client endpoints, maintain redundant DNS/DHCP servers, and run automated patch cycles across hundreds of PCs using <strong>WSUS</strong> and PowerShell.
+            </p>
+            <div class="power-chips">
+              <span>Windows Server 2025</span><span>Active Directory DS</span><span>Group Policy (GPO)</span><span>WSUS</span><span>DNS / DHCP</span>
+            </div>
+          </div>
+
+          <!-- Superpower 4 -->
+          <div class="power-card glass-card">
+            <div class="power-icon-wrapper backup-gradient">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <h3 class="power-title">Near-Zero Downtime & Disaster Immunity</h3>
+            <p class="power-desc">
+              Hard drives crash and ransomware strikes, but my systems do not die. I implement complete 3-2-1 backup strategies using <strong>Arcserve UDP</strong> and <strong>Druva Cloud</strong>, coupled with Hyper-V and VMware ESXi virtualization. If an entire host burns, I can spin up replica virtual machines in under 30 minutes with zero data loss.
+            </p>
+            <div class="power-chips">
+              <span>Arcserve UDP</span><span>Druva Cloud</span><span>VMware ESXi</span><span>Hyper-V</span><span>Config Backups</span>
+            </div>
+          </div>
+
+          <!-- Superpower 5 -->
+          <div class="power-card glass-card">
+            <div class="power-icon-wrapper cloud-gradient">
+              <i class="fa-brands fa-microsoft"></i>
+            </div>
+            <h3 class="power-title">Hybrid Cloud & Microsoft Azure Security</h3>
+            <p class="power-desc">
+              Bridging the gap between on-premises metal and the cloud. Trained in <strong>Azure Administration (AZ-104), Cloud & AI Security (SC-500), and Network Engineering (AZ-700)</strong>. I architect Azure VNets, configure Network Security Groups (NSGs), synchronize on-prem identities into Microsoft Entra ID, and safeguard cloud workloads.
+            </p>
+            <div class="power-chips">
+              <span>Microsoft Azure</span><span>Entra ID (Azure AD)</span><span>AZ-104</span><span>Azure VNets & NSGs</span><span>SC-500 Security</span>
+            </div>
+          </div>
+
+          <!-- Superpower 6 -->
+          <div class="power-card glass-card">
+            <div class="power-icon-wrapper lead-gradient">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <h3 class="power-title">IT Team Leadership & Crisis Command</h3>
+            <p class="power-desc">
+              Tools are only as good as the team wielding them. As IT Team Lead, I conduct daily stand-ups, prioritize ticket escalation queues, mentor junior engineers, and interface directly with executive leadership. I build a culture of documented SOPs, Lansweeper automated audits, and proactive maintenance.
+            </p>
+            <div class="power-chips">
+              <span>Team Mentorship</span><span>Helpdesk SLAs</span><span>Lansweeper Audits</span><span>SOP Authoring</span><span>Project Governance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARSENAL / TECH STACK -->
+    <section id="arsenal" class="section arsenal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> Battle Gear</span>
+          <h2 class="section-title">My Technical Arsenal</h2>
+          <p class="section-subtitle">Every platform, firewall, protocol, and command I master daily.</p>
+        </div>
+
+        <div class="arsenal-categories">
+          <!-- Category 1: Perimeter & Security -->
+          <div class="arsenal-block glass-card">
+            <div class="arsenal-header">
+              <i class="fa-solid fa-shield-halved text-rose"></i>
+              <h3>Perimeter Defense & Security</h3>
+            </div>
+            <div class="arsenal-tags">
+              <div class="arsenal-pill"><strong>Sophos XG / XGS Firewall</strong><span>Deep Inspection & NAT</span></div>
+              <div class="arsenal-pill"><strong>Sophos Endpoint Central</strong><span>DLP & Threat Guard</span></div>
+              <div class="arsenal-pill"><strong>IPsec Site-to-Site VPN</strong><span>Encrypted Tunnels</span></div>
+              <div class="arsenal-pill"><strong>SSL Client VPN</strong><span>Secure Remote Work</span></div>
+              <div class="arsenal-pill"><strong>Wireshark</strong><span>Packet Capture & Analysis</span></div>
+              <div class="arsenal-pill"><strong>Lansweeper</strong><span>Asset & Security Audits</span></div>
+              <div class="arsenal-pill"><strong>VLAN & IP Access Rules</strong><span>Strict Isolation</span></div>
+            </div>
+          </div>
+
+          <!-- Category 2: Networking & Wireless -->
+          <div class="arsenal-block glass-card">
+            <div class="arsenal-header">
+              <i class="fa-solid fa-network-wired text-cyan"></i>
+              <h3>Networking & Wireless Infrastructure</h3>
+            </div>
+            <div class="arsenal-tags">
+              <div class="arsenal-pill"><strong>Cisco Switches</strong><span>Layer 2 & Layer 3 Routing</span></div>
+              <div class="arsenal-pill"><strong>Aruba Switches</strong><span>VLAN Trunking & STP</span></div>
+              <div class="arsenal-pill"><strong>Ubiquiti RF Systems</strong><span>Inter-Division Point-to-Point</span></div>
+              <div class="arsenal-pill"><strong>Cambium APs</strong><span>cnMaestro Cloud Managed</span></div>
+              <div class="arsenal-pill"><strong>Cisco APs</strong><span>Enterprise Roaming</span></div>
+              <div class="arsenal-pill"><strong>LAN/WAN Design</strong><span>Subnetting & High Availability</span></div>
+              <div class="arsenal-pill"><strong>CAT-6 Cabling</strong><span>Patch Panels & Termination</span></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Servers & Directory -->
+          <div class="arsenal-block glass-card">
+            <div class="arsenal-header">
+              <i class="fa-brands fa-windows text-blue"></i>
+              <h3>Servers & Active Directory</h3>
+            </div>
+            <div class="arsenal-tags">
+              <div class="arsenal-pill"><strong>Windows Server</strong><span>2012 R2 through 2025</span></div>
+              <div class="arsenal-pill"><strong>Active Directory (AD DS)</strong><span>User Provisioning & OUs</span></div>
+              <div class="arsenal-pill"><strong>Group Policy (GPO)</strong><span>Hardened Endpoint Policies</span></div>
+              <div class="arsenal-pill"><strong>DNS & DHCP</strong><span>Failover & Scopes</span></div>
+              <div class="arsenal-pill"><strong>WSUS Patching</strong><span>Automated Security Rollups</span></div>
+              <div class="arsenal-pill"><strong>Client OS Fleet</strong><span>Windows 11 / 10 / XP Support</span></div>
+              <div class="arsenal-pill"><strong>PowerShell</strong><span>Domain Automation Scripts</span></div>
+            </div>
+          </div>
+
+          <!-- Category 4: Virtualization & Cloud -->
+          <div class="arsenal-block glass-card">
+            <div class="arsenal-header">
+              <i class="fa-solid fa-cloud text-indigo"></i>
+              <h3>Virtualization & Microsoft Azure</h3>
+            </div>
+            <div class="arsenal-tags">
+              <div class="arsenal-pill"><strong>Microsoft Azure (AZ-104)</strong><span>Compute, Storage, VNets</span></div>
+              <div class="arsenal-pill"><strong>Microsoft Entra ID</strong><span>Hybrid Azure AD Sync</span></div>
+              <div class="arsenal-pill"><strong>Azure Network Security</strong><span>NSGs, ASGs, Subnets</span></div>
+              <div class="arsenal-pill"><strong>Hyper-V & VMware ESXi</strong><span>Virtual Machine Hosting</span></div>
+              <div class="arsenal-pill"><strong>Arcserve UDP</strong><span>Bare-Metal & VM Replication</span></div>
+              <div class="arsenal-pill"><strong>Druva Cloud Backup</strong><span>Offsite Disaster Recovery</span></div>
+              <div class="arsenal-pill"><strong>M365 & Google Workspace</strong><span>Enterprise SaaS Admin</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE BATTLE SCENARIOS / NOC CONSOLE -->
+    <section id="scenarios" class="section scenarios-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> Interactive NOC</span>
+          <h2 class="section-title">Battle Scenarios in Action</h2>
+          <p class="section-subtitle">See how my systems respond to real-world infrastructure crises. Click a scenario to execute!</p>
+        </div>
+
+        <div class="scenario-simulator glass-card">
+          <div class="scenario-selector">
+            <button class="scenario-btn active" data-scenario="breach">
+              <i class="fa-solid fa-bug"></i>
+              <div>
+                <strong>Perimeter Breach Attempt</strong>
+                <span>Sophos XG Policy & IPS Response</span>
+              </div>
+            </button>
+
+            <button class="scenario-btn" data-scenario="hardware-crash">
+              <i class="fa-solid fa-server"></i>
+              <div>
+                <strong>Host Server Failure</strong>
+                <span>Arcserve UDP & Hyper-V Failover</span>
+              </div>
+            </button>
+
+            <button class="scenario-btn" data-scenario="rf-link">
+              <i class="fa-solid fa-satellite-dish"></i>
+              <div>
+                <strong>Inter-Division RF Link</strong>
+                <span>Ubiquiti RF & Cisco L3 Trunk</span>
+              </div>
+            </button>
+
+            <button class="scenario-btn" data-scenario="hybrid-sync">
+              <i class="fa-brands fa-microsoft"></i>
+              <div>
+                <strong>Identity Compromise & Azure</strong>
+                <span>Entra ID Conditional Access & GPO</span>
+              </div>
+            </button>
+          </div>
+
+          <div class="scenario-terminal-wrapper">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="term-dot red"></span>
+                <span class="term-dot yellow"></span>
+                <span class="term-dot green"></span>
+              </div>
+              <span class="term-title" id="terminal-title">NOC-ALERT-SYSTEM: LIVE INCIDENT SIMULATOR</span>
+              <button class="btn btn-sm btn-primary run-scenario-btn" id="trigger-scenario-btn">
+                <i class="fa-solid fa-play"></i> Trigger Scenario
+              </button>
+            </div>
+
+            <div class="terminal-screen" id="scenario-terminal">
+              <p class="term-line system">[NOC READY] Select a battle scenario above and click "Trigger Scenario" to simulate infrastructure defense in real-time.</p>
+              <p class="term-line info">[STATUS] All nodes running at nominal capacity (99.9% Uptime). Zero critical alerts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER JOURNEY: THE EVOLUTION -->
+    <section id="journey" class="section journey-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-compass"></i> Evolution</span>
+          <h2 class="section-title">My Journey: From Ground-Floor to Team Lead</h2>
+          <p class="section-subtitle">How 5+ years of real-world trials forged my engineering foundation.</p>
+        </div>
+
+        <div class="journey-track">
+          <!-- Step 1: Ground Floor -->
+          <div class="journey-card glass-card">
+            <div class="journey-phase">PHASE 1 • 2019 – 2021</div>
+            <h3 class="journey-role">IT Engineer</h3>
+            <span class="journey-company">Technocraft Industries India Ltd</span>
+            <p class="journey-story">
+              <strong>Mastering the Foundations:</strong> I began by getting my hands dirty. I pulled and terminated CAT-6 cables, built structured rack patch panels, troubleshot faulty server motherboards, administered WSUS security patch rollouts, deployed CCTV surveillance networks, and wrote clear standard operating procedures (SOPs).
+            </p>
+            <div class="journey-takeaway">
+              <i class="fa-solid fa-check-circle text-emerald"></i>
+              <span>Learned what hardware feels like when it fails, and why flawless physical cabling is the foundation of network stability.</span>
+            </div>
+          </div>
+
+          <!-- Step 2: Advanced Network Engineering -->
+          <div class="journey-card glass-card">
+            <div class="journey-phase">PHASE 2 • 2022 – 2025</div>
+            <h3 class="journey-role">Sr. IT Engineer</h3>
+            <span class="journey-company">Technocraft Industries India Ltd</span>
+            <p class="journey-story">
+              <strong>Architecting the Perimeter & Network:</strong> Stepped into core infrastructure. I took ownership of the <strong>Sophos XG Firewall</strong>, crafting strict VLAN policies and IPsec VPNs. I configured <strong>Cisco Layer 3 and Aruba switches</strong>, aligned long-range <strong>Ubiquiti RF wireless links</strong> between company plants, and instituted automated disaster recovery backups with Arcserve UDP and Lansweeper.
+            </p>
+            <div class="journey-takeaway">
+              <i class="fa-solid fa-check-circle text-emerald"></i>
+              <span>Transitioned from fixing problems to designing architectures that prevent failures from occurring.</span>
+            </div>
+          </div>
+
+          <!-- Step 3: Leadership & Cloud -->
+          <div class="journey-card glass-card highlight-phase">
+            <div class="journey-phase highlight">PHASE 3 • SEPT 2025 – PRESENT</div>
+            <h3 class="journey-role">Sr. System Administrator — Team Lead</h3>
+            <span class="journey-company">Technocraft Industries India Ltd</span>
+            <p class="journey-story">
+              <strong>Commanding Operations & Directing Teams:</strong> Promoted to IT Team Lead to direct the IT technician team. I align daily IT tasks with corporate objectives, govern Windows Server 2025 domains, enforce zero-trust Sophos endpoint compliance, oversee disaster recovery drills, and lead cloud modernization initiatives into Microsoft Azure.
+            </p>
+            <div class="journey-takeaway">
+              <i class="fa-solid fa-check-circle text-cyan"></i>
+              <span>Empowering engineers, protecting company revenue, and spearheading the shift toward hybrid cloud security.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOUD FRONTIER & ACADEMICS -->
+    <section id="cloud-frontier" class="section cloud-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-cloud-arrow-up"></i> The Next Horizon</span>
+          <h2 class="section-title">Azure Cloud Security & Academic Rigor</h2>
+          <p class="section-subtitle">Formal training in cutting-edge cloud architectures backed by honors degrees in Computer Science.</p>
+        </div>
+
+        <div class="cloud-grid">
+          <!-- Azure Training Card -->
+          <div class="cloud-card glass-card">
+            <div class="cloud-card-header">
+              <div class="cloud-icon-box"><i class="fa-solid fa-cloud-bolt"></i></div>
+              <div>
+                <span class="cloud-status-badge">Pursuing / In Progress</span>
+                <h3>Azure Cloud Security Master Program</h3>
+                <span class="cloud-provider"><i class="fa-solid fa-graduation-cap"></i> Network Kings</span>
+              </div>
+            </div>
+
+            <p class="cloud-desc">
+              Bridging on-premises mastery with Microsoft Azure enterprise cloud engineering:
+            </p>
+
+            <div class="cloud-modules">
+              <div class="cloud-mod-item">
+                <i class="fa-brands fa-microsoft text-cyan"></i>
+                <div>
+                  <strong>Azure Administration (AZ-104)</strong>
+                  <p>VNets, Subnets, NSGs, Azure VMs, Storage Accounts, RBAC, Recovery Services Vault.</p>
+                </div>
+              </div>
+
+              <div class="cloud-mod-item">
+                <i class="fa-solid fa-shield-halved text-rose"></i>
+                <div>
+                  <strong>Cloud & AI Security Technologies (SC-500)</strong>
+                  <p>Zero-Trust architecture, Microsoft Entra ID threat protection, Defender for Cloud.</p>
+                </div>
+              </div>
+
+              <div class="cloud-mod-item">
+                <i class="fa-solid fa-route text-amber"></i>
+                <div>
+                  <strong>Azure Network Engineering (AZ-700)</strong>
+                  <p>Hybrid VPN Gateways, ExpressRoute, Azure Firewall, Hub-Spoke VNet peering.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Honors Card -->
+          <div class="academic-card glass-card">
+            <div class="cloud-card-header">
+              <div class="cloud-icon-box"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <span class="cloud-status-badge" style="background: rgba(56, 189, 248, 0.15); color: var(--accent-cyan); border-color: rgba(56, 189, 248, 0.3);">University of Mumbai</span>
+                <h3>Academic Foundation</h3>
+                <span class="cloud-provider"><i class="fa-solid fa-star"></i> Graduated with Grade 'A' Honors</span>
+              </div>
+            </div>
+
+            <div class="degrees-list">
+              <div class="degree-item">
+                <div class="degree-badge">Grade 'A'</div>
+                <h4>M.Sc. Computer Science</h4>
+                <span class="degree-inst">B. K. Birla College, Kalyan • University of Mumbai</span>
+                <span class="degree-date"><i class="fa-regular fa-calendar"></i> Graduated: April 2020</span>
+                <p>Advanced study in Distributed Network Systems, Operating System Architecture, Network Protocols, and Cryptography.</p>
+              </div>
+
+              <div class="degree-item">
+                <div class="degree-badge">Grade 'A'</div>
+                <h4>B.Sc. Information Technology</h4>
+                <span class="degree-inst">Arts, Commerce & Science College, Kinhavali • University of Mumbai</span>
+                <span class="degree-date"><i class="fa-regular fa-calendar"></i> Graduated: April 2017</span>
+                <p>Comprehensive training in Computer Networking, Database Management Systems, System Architecture, and Software Engineering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION: CALL IN THE EXPERT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-satellite-dish"></i> Direct Channel</span>
+          <h2 class="section-title">Ready to Fortify Your Infrastructure?</h2>
+          <p class="section-subtitle">Whether you're looking for an IT Team Lead, need an enterprise firewall overhaul, or want to discuss resilient systems.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-col">
+            <div class="contact-card glass-card">
+              <h3>Direct Contact Lines</h3>
+              <p>I am actively available for Senior IT Leadership, System & Network Administration, and Infrastructure Engineering opportunities.</p>
+
+              <div class="contact-items">
+                <!-- Location -->
+                <div class="contact-item">
+                  <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="ci-details">
+                    <span class="ci-label">Base Location</span>
+                    <span class="ci-val">Murbad, Maharashtra - 421401, India</span>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-item">
+                  <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="ci-details">
+                    <span class="ci-label">Hotline Phone</span>
+                    <a href="tel:+919130177327" class="ci-val">+91 9130177327</a>
+                  </div>
+                  <button class="copy-btn" data-copy="+919130177327" title="Copy Phone Number">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-item">
+                  <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="ci-details">
+                    <span class="ci-label">Direct Email</span>
+                    <a href="mailto:vaibhav.d.adhikari@gmail.com" class="ci-val">vaibhav.d.adhikari@gmail.com</a>
+                  </div>
+                  <button class="copy-btn" data-copy="vaibhav.d.adhikari@gmail.com" title="Copy Email">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="contact-item">
+                  <div class="ci-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="ci-details">
+                    <span class="ci-label">LinkedIn Profile</span>
+                    <a href="https://www.linkedin.com/in/vaibhav-adhikari" target="_blank" rel="noopener noreferrer" class="ci-val">
+                      linkedin.com/in/vaibhav-adhikari
+                    </a>
+                  </div>
+                  <a href="https://www.linkedin.com/in/vaibhav-adhikari" target="_blank" rel="noopener noreferrer" class="link-btn" title="Open LinkedIn Profile">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="social-links-bar">
+                <a href="tel:+919130177327" class="social-pill">
+                  <i class="fa-solid fa-phone"></i> Direct Call
+                </a>
+                <a href="mailto:vaibhav.d.adhikari@gmail.com" class="social-pill">
+                  <i class="fa-solid fa-envelope"></i> Send Email
+                </a>
+                <a href="https://www.linkedin.com/in/vaibhav-adhikari" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-col">
+            <div class="contact-form-card glass-card">
+              <h3>Transmit a Message</h3>
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="e.g. Anand Sharma" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Work Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="e.g. anand@organization.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject / Inquiry Type</label>
+                  <input type="text" id="subject" name="subject" placeholder="Infrastructure Leadership / Network Engineering Role" />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message Transmission <span class="required">*</span></label>
+                  <textarea id="message" name="message" rows="4" placeholder="Hi Vaibhav, I reviewed your infrastructure leadership track record and would like to discuss..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-paper-plane"></i> Transmit Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>VA<span class="logo-dot">.</span>NET<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p><strong>Vaibhav Adhikari</strong> • IT Team Lead | Enterprise Systems & Network Architect</p>
+        <p class="footer-sub">Murbad, Maharashtra, India • Technocraft Industries India Ltd</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#identity">Who I Am</a>
+        <a href="#superpowers">Capabilities</a>
+        <a href="#arsenal">Tech Arsenal</a>
+        <a href="#scenarios">NOC Console</a>
+        <a href="#journey">Journey</a>
+        <a href="https://www.linkedin.com/in/vaibhav-adhikari" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+
+      <div class="footer-right">
+        <button id="back-to-top" class="back-to-top" title="Scroll to top" aria-label="Scroll to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

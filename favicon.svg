@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <!-- Background Shield / Hexagon -->
+  <rect width="64" height="64" rx="16" fill="#080c14" />
+  <path d="M32 10 L48 18 V34 C48 44 41 51 32 54 C23 51 16 44 16 34 V18 Z" fill="url(#grad)" opacity="0.25" stroke="url(#grad)" stroke-width="2.5" />
+  <!-- Server / Core Lines -->
+  <line x1="24" y1="26" x2="40" y2="26" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="24" y1="33" x2="40" y2="33" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="24" y1="40" x2="40" y2="40" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="21" cy="26" r="1.5" fill="#10b981" />
+  <circle cx="21" cy="33" r="1.5" fill="#38bdf8" />
+  <circle cx="21" cy="40" r="1.5" fill="#f59e0b" />
+</svg>
